@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/logo.jpg';
 
 const navLinks = [
   { href: '#services', label: 'Услуги' },
@@ -37,8 +38,9 @@ export const Header = () => {
       <div className="container-wide px-6 md:px-12 lg:px-20">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <span className="font-display text-2xl md:text-3xl tracking-tight text-foreground">
+          <a href="#" className="flex items-center gap-3">
+            <img src={logo} alt="JSPACE" className="h-10 md:h-12 w-auto" />
+            <span className="font-display text-xl md:text-2xl tracking-tight text-foreground">
               JSPACE
             </span>
           </a>
