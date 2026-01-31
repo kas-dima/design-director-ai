@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import logo from '@/assets/logo.jpg';
 
 const footerLinks = [
   { href: '#services', label: 'Услуги' },
@@ -19,9 +20,10 @@ export const Footer = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="font-display text-2xl text-foreground"
+            className="flex items-center gap-3"
           >
-            JSPACE
+            <img src={logo} alt="JSPACE" className="h-10 w-auto" />
+            <span className="font-display text-xl text-foreground">JSPACE</span>
           </motion.a>
 
           {/* Navigation */}
